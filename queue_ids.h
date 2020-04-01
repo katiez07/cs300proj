@@ -1,2 +1,2 @@
-#define CRIMSON_ID "/home/anderson/anderson"
-#define QUEUE_NUMBER 12 //day of birth
+#define CRIMSON_ID "/home/krzucker"
+#define QUEUE_NUMBER 14 //day of birth

@@ -8,8 +8,17 @@
 #include "longest_word_search.h"
 #include "queue_ids.h"
 
+void msgs();
+
+
 int main(int argc, char**argv)
 {
+    msgs();
+}
+
+
+
+void msgs(){
     int msqid;
     int msgflg = IPC_CREAT | 0666;
     key_t key;
@@ -47,3 +56,7 @@ int main(int argc, char**argv)
 
     exit(0);
 }
+
+
+
+

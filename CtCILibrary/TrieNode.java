@@ -2,6 +2,9 @@ package CtCILibrary;
 
 import java.util.HashMap;
 
+// file from Dr. Anderson' github
+// getChildren() added by Katie Zucker, krzucker@crimson.ua.edu, CWID 11624565
+
 /* One node in the trie. Most of the logic of the trie is implemented
  * in this class.
  */
@@ -62,6 +65,11 @@ public class TrieNode {
     	return children.get(c);
     }
 
+	// added by Katie Zucker for convenience
+	public HashMap<Character, TrieNode> getChildren(){
+		return children;
+	}
+
     /* Returns whether this node represents the end of a complete word. */
     public boolean terminates() {
     	return terminates;
@@ -71,4 +79,8 @@ public class TrieNode {
     public void setTerminates(boolean t) {
     	terminates = t;
     }
+
 }
+
+
+

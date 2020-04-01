@@ -20,8 +20,9 @@ public class ParallelTextSearch{
        workers[i]=new ArrayBlockingQueue(10);
     }
 
-    new Worker(samples[0],0,workers[0],resultsOutputArray).start();
-    new Worker(samples[1],1,workers[1],resultsOutputArray).start();
+    // here
+    new Worker(samples[0],0,"",workers[0],resultsOutputArray).start();
+    new Worker(samples[1],1,"",workers[1],resultsOutputArray).start();
 
     try {
       workers[0].put(args[0]);
@@ -39,4 +40,8 @@ public class ParallelTextSearch{
     }
   }
 
-}
+
+
+    }
+
+
